@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
+import 'package:pets_find_project/Components/LoginPage.dart';
 
 void main() {
   runApp(const HomePagePets());
@@ -24,8 +25,11 @@ class HomePagePetsState extends State<HomePagePets> {
           backgroundColor: Colors.lightGreen,
           title: const Text('Home Pets App'),
         ),
-      )
-      
+      ),
+      // initialRoute: '/',
+      // routes: {
+      //   '/':(context) => const LoginPagePets(),
+      // },
     );
   }
 }

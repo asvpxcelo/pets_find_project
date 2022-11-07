@@ -28,7 +28,8 @@ class LoginPagePetsState extends State<LoginPagePets> {
           children: <Widget>[
             Lottie.network('https://assets9.lottiefiles.com/packages/lf20_syqnfe7c.json',
             height: 420,
-            width: 420),
+            width: 420,
+            ),
             const SizedBox(height: 25),
             TextField(
                 decoration: InputDecoration(
@@ -52,9 +53,7 @@ class LoginPagePetsState extends State<LoginPagePets> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => const HomePagePets())
-                );
+                Navigator.of(context).pushNamed('/home');
               },
               child: const Text('Login Pets'),
             )

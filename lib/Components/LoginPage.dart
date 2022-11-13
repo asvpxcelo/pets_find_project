@@ -53,7 +53,9 @@ class LoginPagePetsState extends State<LoginPagePets> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed('/home');
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => const HomePagePets())
+                );
               },
               child: const Text('Login Pets'),
             )
